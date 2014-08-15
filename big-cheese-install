@@ -79,7 +79,7 @@ if [ -n "${SITE_CURRENT}" ]; then
   fi
 
   # Add 'current' alias to site.
-  REDIRECTION_STATEMENT="--redirection=1"
+  REDIRECTION_STATEMENT="--redirection=${SITE_URI}"
   if [ "${SITE_ALIAS_REDIRECTION}" == "false" ]; then
     REDIRECTION_STATEMENT="--redirection=0"
   fi
